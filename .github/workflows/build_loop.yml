@@ -210,8 +210,7 @@ jobs:
           ref: ${{ env.TARGET_BRANCH }}
 
       - name: Dana
-        if: |
-          echo "Downloading code to support Dana pump"
+        if: echo "Downloading code to support Dana pump"
           git clone --branch=dev https://github.com/bastiaanv/DanaKit
           echo "Applying customization to add Dana support to Loop"
           curl https://github.com/loopandlearn/LoopWorkspace/commit/155d2e4a89ab5e7e6b423c67f8c0ccb132517ca4.patch | git apply
