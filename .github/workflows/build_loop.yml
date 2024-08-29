@@ -208,7 +208,6 @@ jobs:
         with:
           token: ${{ secrets.GH_PAT }}
           ref: ${{ env.TARGET_BRANCH }}
-
       - name: Dana
         if: "Downloading code to support Dana pump"
           git clone --branch=dev https://github.com/bastiaanv/DanaKit
