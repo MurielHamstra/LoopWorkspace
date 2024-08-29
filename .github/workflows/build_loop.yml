@@ -209,7 +209,7 @@ jobs:
           token: ${{ secrets.GH_PAT }}
           ref: ${{ env.TARGET_BRANCH }}
 
-      - name: Add Dana
+      - name: Dana
         if: | # echo "Downloading code to support Dana pump"
           add dana --branch=dev https://github.com/bastiaanv/DanaKit
           echo "Applying customization to add Dana support to Loop"
